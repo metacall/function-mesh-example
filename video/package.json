@@ -15,7 +15,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel video.jsx --out-file video.js --plugins @babel/plugin-transform-react-jsx",
-    "xd": "babel --version"
+    "version": "babel --version"
   },
   "repository": {
     "type": "git",
