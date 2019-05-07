@@ -1,9 +1,11 @@
-#!/usr/bin/env node
+const ReactDOMServer = require('react-dom/server');
 
-function video(name) {
-	return name;
-}
+const React = require('react');
 
-module.exports = {
-	video,
-};
+const Video = props => React.createElement("video", {
+  src: props.name
+});
+
+const myFunc = name => console.log(ReactDOMServer.renderToString(React.createElement(Video, {
+  name: name
+})));

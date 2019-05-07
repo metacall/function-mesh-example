@@ -1,0 +1,26 @@
+{
+  "name": "ad-maker-example",
+  "version": "1.0.0",
+  "description": "An example for Metacall",
+  "main": "video.js",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/core": "^7.4.0",
+    "@babel/cli": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel video.jsx --out-file video.js --plugins @babel/plugin-transform-react-jsx",
+    "xd": "babel --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/metacall/ad-maker-example"
+  },
+  "author": "Viferga, Akash Joshi",
+  "license": "ISC"
+}
