@@ -6,6 +6,10 @@ const Video = props => React.createElement("video", {
   src: props.name
 });
 
-const myFunc = name => console.log(ReactDOMServer.renderToString(React.createElement(Video, {
+const myFunc = name => ReactDOMServer.renderToString(React.createElement(Video, {
   name: name
-})));
+}));
+
+module.exports = {
+  myFunc
+};
