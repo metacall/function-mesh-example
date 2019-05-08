@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby -w
+require 'mini_cache'
 
-def cache(text)
-	return text
-end
+store = MiniCache::Store.new
+
+store.set('video', 'random123')
+
+puts(store.get('video'))
