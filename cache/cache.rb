@@ -3,6 +3,13 @@ require 'mini_cache'
 
 store = MiniCache::Store.new
 
-store.set('video', 'random123')
+def store(key,value)
+    store.set(key, value)
+end
 
-puts(store.get('video'))
+def retrieve(key)
+    return puts(store.get(key))
+end
+
+store "video","123"
+retrieve "video"
