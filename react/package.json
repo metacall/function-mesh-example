@@ -1,8 +1,8 @@
 {
-  "name": "ad-maker-example",
+  "name": "function-mesh-example",
   "version": "1.0.0",
-  "description": "An example for Metacall",
-  "main": "video.js",
+  "description": "An example for MetaCall Function Mesh",
+  "main": "react.js",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
@@ -14,13 +14,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel video.jsx --out-file video.js --plugins @babel/plugin-transform-react-jsx",
+    "build": "babel react.jsx --out-file react.js --plugins @babel/plugin-transform-react-jsx",
     "version": "babel --version"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/metacall/ad-maker-example"
+    "url": "github.com/metacall/function-mesh-example"
   },
-  "author": "Viferga, Akash Joshi",
+  "author": "Vicente Eduardo Ferrer Garcia, Akash Joshi",
   "license": "ISC"
 }
