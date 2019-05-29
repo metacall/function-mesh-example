@@ -1,0 +1,12 @@
+**
+!cache
+cache/.gitignore
+!frontend
+frontend/.gitignore
+!pdf
+pdf/.gitignore
+!react
+react/.gitignore
+react/node_modules
+react/react.js
+!metacall.json

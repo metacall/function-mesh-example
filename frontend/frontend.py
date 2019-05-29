@@ -3,9 +3,11 @@
 from metacall import metacall_load_from_file, metacall
 
 # Load scripts from other languages
-metacall_load_from_file('rb', ['cache/cache.rb'])
-metacall_load_from_file('cs', ['pdf/Pdf.cs'])
+#metacall_load_from_file('rb', ['cache/cache.rb'])
+#metacall_load_from_file('cs', ['pdf/Pdf.cs'])
 metacall_load_from_file('node', ['react/react.js'])
+
+from os import path
 
 # Load index html file
 basepath = path.dirname(path.abspath(__file__))
