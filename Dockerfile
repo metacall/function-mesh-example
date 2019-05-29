@@ -22,10 +22,12 @@ COPY cache/Gemfile cache/Gemfile.lock /
 RUN gem install bundler \
 	&& bundler install --gemfile=/Gemfile
 
+# TODO: CSharp
+
 # # Builder CSharp image
 # FROM microsoft/dotnet:1.1.10-sdk-1.1.11-stretch AS csharp_builder
 
-# # Copy dependencies
+# # Copy CSharp dependencies spec
 # COPY pdf/ /
 
 # Builder NodeJS image
@@ -63,6 +65,8 @@ COPY --from=python_builder /root/.local /root/.local
 # Copy Ruby dependencies
 COPY --from=ruby_builder /root/.gem /root/.gem
 COPY --from=ruby_builder /usr/local/bundle/ /usr/local/bundle/
+
+# TODO: CSharp
 
 # # Copy CSharp dependencies
 # COPY --from=csharp_builder /root/.nuget /root/.nuget

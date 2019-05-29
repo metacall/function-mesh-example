@@ -15,3 +15,47 @@ The complexity of State of The Art of Service Mesh makes so difficult to develop
 ## Architecture Overview
 
 ![MetaCall Function Mesh Overview](/overview.png)
+
+## Running the example with Docker
+
+It is possible to run and test locally the **Function Mesh** through **MetaCall CLI** in Docker. So you do not need to install all dependencies on your environment.
+
+`Docker`
+
+``` sh
+docker build -t metacall/function_mesh_example .
+docker run -it metacall/function_mesh_example
+```
+
+`Docker Compose`
+
+``` sh
+docker-compose build
+docker-compose run example
+```
+
+## Testing the example
+
+Input commands are the ones after `>` symbol (type `help` to show all command list).
+
+``` sh
+> load py frontend/frontend.py
+Script (frontend/frontend.py) loaded correctly
+> inspect
+runtime node {
+    module react {
+        function ReactIndexPage(name)
+    }
+}
+runtime py {
+    module frontend {
+        function convert(html)
+        function index()
+    }
+}
+> call index()
+...
+> call convert("<html><head><title>Example Html</title></head><body>Hello World</body></html>")
+...
+> exit
+```

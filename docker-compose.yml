@@ -6,9 +6,11 @@
 version: "3.7"
 
 services:
-  function_mesh_example:
+  example:
     image: metacall/function_mesh_example
     container_name: metacall_function_mesh_example
     build:
       context: .
       dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
