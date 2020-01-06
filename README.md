@@ -6,11 +6,11 @@
 
 ## Motivation
 
-This example has been designed in other to illustrate the differences between a typical Service Mesh like [Istio](https://istio.io/docs/examples/bookinfo/) and **[MetaCall Function Mesh](https://medium.com/@metacall/function-mesh-architecture-c0304ba4bad0)**.
+This example has been designed in order to illustrate the differences between the **[MetaCall Function Mesh](https://medium.com/@metacall/function-mesh-architecture-c0304ba4bad0)** and a typical Service Mesh such as [Istio](https://istio.io/docs/examples/bookinfo/).
 
-The complexity of State of The Art of Service Mesh makes so difficult to develop applications. To implement properly a Service Mesh you need multiple knowledge of different areas. The plumbing becomes difficult and tedious, meanwhile with Function Mesh there is no plumbing, only function calls.
+The complexity of State of The Art Service Meshes makes it difficult to develop applications because it requires the developer to have knowledge in multiple areas of expertise. The plumbing becomes difficult and tedious, meanwhile with Function Mesh there is no plumbing, only function calls.
 
-**[MetaCall Core](https://github.com/metacall/core)** allows to do that function calls between languages, and the plumbing and scalability is automatically done by the **[FaaS](https://metacall.io)**.
+**[MetaCall Core](https://github.com/metacall/core)** allows to do call functions between languages and the plumbing and scalability is automatically done by the **[FaaS](https://metacall.io)**.
 
 ## Architecture Overview
 
@@ -18,7 +18,7 @@ The complexity of State of The Art of Service Mesh makes so difficult to develop
 
 ## Running the example with Docker
 
-It is possible to run and test locally the **Function Mesh** through **MetaCall CLI** in Docker. So you do not need to install all dependencies on your environment.
+It is possible to run and test the **Function Mesh** locally through **MetaCall CLI** in Docker. So there is no need to install all dependencies in your environment.
 
 `Docker`
 
@@ -36,7 +36,7 @@ docker-compose run example
 
 ## Testing the example
 
-Input commands are the ones after `>` symbol (type `help` to show all command list).
+Input commands are the ones after the `>` symbol (type `help` to show all command list).
 
 ``` sh
 > load py frontend/frontend.py
